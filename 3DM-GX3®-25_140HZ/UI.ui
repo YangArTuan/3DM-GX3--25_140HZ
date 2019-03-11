@@ -1,0 +1,1705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>925</width>
+    <height>665</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Bojay IMU</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(34, 194, 255);</string>
+       </property>
+       <property name="text">
+        <string>Bojay IMU UI V1.0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(228, 255, 248);</string>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>Tab 1</string>
+        </attribute>
+        <widget class="QPushButton" name="pushButtonOpenPort">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>10</y>
+           <width>161</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OpenPort</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButtonClosePort">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>10</y>
+           <width>161</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ClosePort</string>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBoxAxisSpeed">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>40</y>
+           <width>391</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Axis Speed</string>
+         </property>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>X Axis</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>80</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>Y Axis</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>120</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>Z Axis</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditXSpeedSet">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>30</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditYSpeedSet">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>70</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditZSpeedSet">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>110</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonSpeedSet">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>70</y>
+            <width>89</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Set</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonSpeedGet">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>70</y>
+            <width>89</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Get</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBoxMoveCoordiante">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>180</y>
+           <width>851</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Move Coordinate</string>
+         </property>
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>60</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>X Axis</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>100</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>Y Axis</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>140</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>Z Axis</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditxMove">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>60</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEdityMove">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>100</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditzMove">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>140</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonMovex">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>60</y>
+            <width>75</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Move X</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonMovey">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>100</y>
+            <width>75</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Move Y</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonMovez">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>140</y>
+            <width>75</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Move Z</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonGetx">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>60</y>
+            <width>75</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Get X</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonGety">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>100</y>
+            <width>75</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Get Y</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonGetz">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>140</y>
+            <width>75</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Get Z</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="labelSensorX">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>60</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="labelSensorY">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>100</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="labelSensorZ">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>140</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_15">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>30</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(58, 255, 13);</string>
+          </property>
+          <property name="text">
+           <string>Sensor Data</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_12">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>50</y>
+            <width>111</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 249, 189);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_16">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>30</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(58, 255, 13);</string>
+          </property>
+          <property name="text">
+           <string>Sensor Data</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_13">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>50</y>
+            <width>111</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 249, 189);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonOffsetX">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>60</y>
+            <width>75</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Offset X</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonOffsetY">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>100</y>
+            <width>75</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Offset Y</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonOffsetZ">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>140</y>
+            <width>75</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Offset Z</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>630</x>
+            <y>30</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(58, 255, 13);</string>
+          </property>
+          <property name="text">
+           <string>Accuracy</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_22">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>50</y>
+            <width>111</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 249, 189);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditxAccuracyZ">
+          <property name="geometry">
+           <rect>
+            <x>630</x>
+            <y>140</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditxAccuracyY">
+          <property name="geometry">
+           <rect>
+            <x>630</x>
+            <y>100</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditxAccuracyX">
+          <property name="geometry">
+           <rect>
+            <x>630</x>
+            <y>60</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonGetSensorData">
+          <property name="geometry">
+           <rect>
+            <x>740</x>
+            <y>100</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Get sensor</string>
+          </property>
+         </widget>
+         <zorder>label_13</zorder>
+         <zorder>label_12</zorder>
+         <zorder>label_9</zorder>
+         <zorder>label_10</zorder>
+         <zorder>label_11</zorder>
+         <zorder>textEditxMove</zorder>
+         <zorder>textEdityMove</zorder>
+         <zorder>textEditzMove</zorder>
+         <zorder>pushButtonMovex</zorder>
+         <zorder>pushButtonMovey</zorder>
+         <zorder>pushButtonMovez</zorder>
+         <zorder>pushButtonGetx</zorder>
+         <zorder>pushButtonGety</zorder>
+         <zorder>pushButtonGetz</zorder>
+         <zorder>labelSensorX</zorder>
+         <zorder>labelSensorY</zorder>
+         <zorder>labelSensorZ</zorder>
+         <zorder>label_15</zorder>
+         <zorder>label_16</zorder>
+         <zorder>pushButtonOffsetX</zorder>
+         <zorder>pushButtonOffsetY</zorder>
+         <zorder>pushButtonOffsetZ</zorder>
+         <zorder>label_21</zorder>
+         <zorder>label_22</zorder>
+         <zorder>textEditxAccuracyZ</zorder>
+         <zorder>textEditxAccuracyY</zorder>
+         <zorder>textEditxAccuracyX</zorder>
+         <zorder>pushButtonGetSensorData</zorder>
+        </widget>
+        <widget class="QGroupBox" name="groupBoxAxisLimit">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>40</y>
+           <width>401</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Axis Limit</string>
+         </property>
+         <widget class="QLabel" name="label_14">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>X Axis</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_17">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>80</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>Y Axis</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>120</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>Z Axis</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonLimitGet">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>80</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Get</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="zMaxLimit">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>120</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="xMaxLimit">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>40</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="yMaxLimit">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>80</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="zMinLimit">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>120</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="xMinLimit">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>40</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="yMinLimit">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>80</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>30</y>
+            <width>111</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 249, 189);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>30</y>
+            <width>111</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 249, 189);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <zorder>label_20</zorder>
+         <zorder>label_19</zorder>
+         <zorder>label_14</zorder>
+         <zorder>label_17</zorder>
+         <zorder>label_18</zorder>
+         <zorder>pushButtonLimitGet</zorder>
+         <zorder>zMaxLimit</zorder>
+         <zorder>xMaxLimit</zorder>
+         <zorder>yMaxLimit</zorder>
+         <zorder>zMinLimit</zorder>
+         <zorder>xMinLimit</zorder>
+         <zorder>yMinLimit</zorder>
+        </widget>
+        <widget class="QCheckBox" name="checkBoxPLC">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>10</y>
+           <width>51</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>PLC</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBoxSensor">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>10</y>
+           <width>81</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Sensor</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBoxAxisSpeed_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>370</y>
+           <width>381</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Set step</string>
+         </property>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>X Axis</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>80</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>Y Axis</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_8">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>120</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>Z Axis</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditXStep">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>30</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditYStep">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>70</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditZStep">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>110</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="ButtonStepMoveX">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>30</y>
+            <width>89</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Move X</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="ButtonStepMoveY">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>70</y>
+            <width>89</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Move Y</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="ButtonStepMoveZ">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>110</y>
+            <width>89</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Move Z</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBoxAxisSpeed_3">
+         <property name="geometry">
+          <rect>
+           <x>390</x>
+           <y>370</y>
+           <width>381</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Burning</string>
+         </property>
+         <widget class="QLabel" name="label_29">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>LoopTimes</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_31">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>90</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>Interval</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditBurningLoopTimes">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>30</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditBurningInterval">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>80</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="ButtonBurning">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>50</y>
+            <width>89</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Burning</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="geometry">
+          <rect>
+           <x>780</x>
+           <y>370</y>
+           <width>111</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>password</string>
+         </property>
+         <widget class="QTextEdit" name="textEditSetPosition">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonSetPosition">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>80</y>
+            <width>89</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>SetPosition</string>
+          </property>
+         </widget>
+        </widget>
+        <zorder>groupBoxAxisSpeed</zorder>
+        <zorder>pushButtonOpenPort</zorder>
+        <zorder>pushButtonClosePort</zorder>
+        <zorder>groupBoxMoveCoordiante</zorder>
+        <zorder>groupBoxAxisLimit</zorder>
+        <zorder>checkBoxPLC</zorder>
+        <zorder>checkBoxSensor</zorder>
+        <zorder>groupBoxAxisSpeed_2</zorder>
+        <zorder>groupBoxAxisSpeed_3</zorder>
+        <zorder>groupBox</zorder>
+       </widget>
+       <widget class="QWidget" name="tab_4">
+        <attribute name="title">
+         <string>Tab 2</string>
+        </attribute>
+        <widget class="QLabel" name="label_23">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>40</y>
+           <width>81</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(41, 255, 244);</string>
+         </property>
+         <property name="text">
+          <string>Frequency</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_24">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>90</y>
+           <width>81</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(41, 255, 244);</string>
+         </property>
+         <property name="text">
+          <string>Time</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_25">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>140</y>
+           <width>81</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(41, 255, 244);</string>
+         </property>
+         <property name="text">
+          <string>SleepTime</string>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="textEditFrequency">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>40</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="textEditTime">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>90</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="textEditSleepTime">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>140</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="ButtonAcquire">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>90</y>
+           <width>113</width>
+           <height>32</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Acquire</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_26">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>40</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(41, 255, 244);</string>
+         </property>
+         <property name="text">
+          <string>Roll Average</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_27">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>140</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(41, 255, 244);</string>
+         </property>
+         <property name="text">
+          <string>Yaw Average</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_28">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>90</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(41, 255, 244);</string>
+         </property>
+         <property name="text">
+          <string>Pitch Average</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelRollAverage">
+         <property name="geometry">
+          <rect>
+           <x>570</x>
+           <y>40</y>
+           <width>81</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(41, 255, 244);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelPitchAverage">
+         <property name="geometry">
+          <rect>
+           <x>570</x>
+           <y>90</y>
+           <width>81</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(41, 255, 244);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelYawAverage">
+         <property name="geometry">
+          <rect>
+           <x>570</x>
+           <y>140</y>
+           <width>81</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(41, 255, 244);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBoxAxisSpeed_4">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>220</y>
+           <width>391</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>PLC offset</string>
+         </property>
+         <widget class="QLabel" name="label_30">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>X Axis</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_32">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>80</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>Y Axis</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_33">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>120</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>Z Axis</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditXPLCOffset">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>30</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditYPLCOffset">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>70</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditZPLCOffset">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>110</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonSetPLCOffset">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>60</y>
+            <width>89</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Set</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBoxSetAxisLimit">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>220</y>
+           <width>401</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Axis Limit</string>
+         </property>
+         <widget class="QLabel" name="label_Axis">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>X Axis</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Yxis">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>80</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>Y Axis</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_Zxis">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>120</y>
+            <width>67</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(252, 233, 79);</string>
+          </property>
+          <property name="text">
+           <string>Z Axis</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonSetLimit">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>96</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Set</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="zMaxLimit_2">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>120</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="xMaxLimit_2">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>40</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="yMaxLimit_2">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>80</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="zMinLimit_2">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>120</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="xMinLimit_2">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>40</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="yMinLimit_2">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>80</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditSetXMaxLimit">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>30</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditSetXMinLimit">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>30</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditSetYMinLimit">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>70</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditSetYMaxLimit">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>70</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditSetZMinLimit">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>110</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditSetZMaxLimit">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>110</y>
+            <width>91</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_SetPasswd">
+          <property name="geometry">
+           <rect>
+            <x>320</x>
+            <y>30</y>
+            <width>61</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>password</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="textEditSetAxisLimit">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>50</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(34, 194, 255);</string>
+       </property>
+       <property name="text">
+        <string>Developed by Tony</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelErrorMessage">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(211, 215, 207);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

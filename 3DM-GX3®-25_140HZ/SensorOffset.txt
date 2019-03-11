@@ -1,0 +1,6 @@
+xAxis0 = -0.1
+xAxis180 = 0
+xAxis90Plus = -0.1
+xAxis90Minus = -0.1
+yAxis90Plus = 0.55
+yAxis90Minus = -0.55
